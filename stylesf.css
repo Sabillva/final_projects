@@ -1,0 +1,83 @@
+@font-face {
+  font-family: begota display;
+  src: url(./Begota\ Display.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+  scroll-behavior: smooth;
+  background-color: #faf8f2;
+}
+
+#features-details {
+  font-family: "Begota Display";
+}
+
+#features-details h1 {
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  font-weight: bold;
+}
+
+#features-details h5 {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+#details-content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Responsive grid */
+  gap: 2vw;
+  padding: 2vw;
+}
+
+#details-content .feature {
+  margin-bottom: 4vh;
+  padding: 2vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#details-content .feature h2 {
+  font-size: 2.2vw;
+  margin-bottom: 1.5vh;
+  font-weight: 600;
+}
+
+#details-content .feature p {
+  font-size: 1.3vw;
+  color: #333;
+  line-height: 1.6;
+}
+
+.go-back-btn {
+  display: inline-block;
+  padding: 1.2vw 2.5vw;
+  background-color: #4f5bff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 4vw;
+}
+
+.go-back-btn:hover {
+  background-color: #3e48d2;
+  transform: scale(1.05);
+}

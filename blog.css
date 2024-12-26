@@ -1,0 +1,68 @@
+@font-face {
+  font-family: nb international regular;
+  src: url(./NB\ International\ Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "NB International Regular";
+  height: 100%;
+  width: 100%;
+  background-color: #faf8f2;
+  scroll-behavior: smooth;
+}
+
+.blog-container {
+  width: 100%;
+  height: 100%;
+  padding: 10vw;
+  border-radius: 8px;
+}
+
+.blog-container h1 {
+  margin-top: 1vw;
+  font-size: 5vw;
+  margin-bottom: 5vw;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.blog-container video {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 5vw;
+}
+
+.blog-container p {
+  font-size: 2.3vw;
+  line-height: 1.2;
+  margin-bottom: 4vw;
+  color: #555;
+  text-align: justify;
+}
+
+.blog-container a {
+  display: inline-block;
+  padding: 2vw 4vw;
+  font-size: 3vw;
+  color: #fff;
+  background-color: #2a94db;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2vw;
+}
+
+.blog-container a:hover {
+  background-color: #555;
+  color: #2a94db;
+}

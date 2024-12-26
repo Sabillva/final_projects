@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>EcoFriendly</title>
+  </head>
+  <body>
+    <!--Sign in hisse-->
+    <div class="container">
+      <div class="login-box" id="login">
+        <div class="login-header">
+          <header>Hello, Again</header>
+        </div>
+
+        <div class="form-box login">
+          <div class="input-box">
+            <input type="email" required />
+            <label for="">Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" id="logPassword" required />
+            <label for="logPassword">Password</label>
+            <div class="eye-area">
+              <div class="eye-box" onclick="myLogPassword()">
+                <i class="fa-regular fa-eye" id="eye"></i>
+                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="forgot">
+          <section>
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </section>
+          <section>
+            <a href="#">Forgot password</a>
+          </section>
+        </div>
+        <div class="input-submit">
+          <button class="submit-btn" id="submit" onclick="signIn()"></button>
+          <label for="submit">Sign In</label>
+        </div>
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="#" class="login" onclick="register()">Register</a>
+          </p>
+        </div>
+      </div>
+
+      <!--Sign up hisse-->
+      <div class="register-box" id="register">
+        <div class="register-header">
+          <header>Sign Up, Now</header>
+        </div>
+
+        <div class="form-box register">
+          <div class="input-box">
+            <input type="text" required />
+            <label for="">User Name</label>
+          </div>
+
+          <div class="input-box">
+            <input type="email" required />
+            <label for="">Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" id="regPassword" required />
+            <label for="regPassword">Password</label>
+            <div class="eye-area">
+              <div class="eye-box" onclick="myRegPassword()">
+                <i class="fa-regular fa-eye" id="eye-2"></i>
+                <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="forgot">
+          <section>
+            <input type="checkbox" id="check-2" />
+            <label for="check-2">Remember me</label>
+          </section>
+        </div>
+        <div class="input-submit-2">
+          <button
+            class="submit-btn-2"
+            id="submit-2"
+            onclick="signUp()"
+          ></button>
+          <label for="submit-2">Sign Up</label>
+        </div>
+        <div class="login-link">
+          <p>
+            Have an account?
+            <a href="#" class="register" onclick="login()">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
